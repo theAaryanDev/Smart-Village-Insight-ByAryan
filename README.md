@@ -1,5 +1,5 @@
 
-# Smart Village Insights (Interactive Input Version)
+# Smart Village Insights (A simple dashboard made for my rural internship that nobody uses.)
 
 A Streamlit dashboard for rural internship projects where users can input values directly:
 - Electricity cut hours (choose number of days, enter one by one)
@@ -11,8 +11,3 @@ A Streamlit dashboard for rural internship projects where users can input values
 pip install -r requirements.txt
 streamlit run app.py
 ```
-
-## Deploy on Streamlit Cloud
-1. Push this folder to a **public GitHub repo**.
-2. Go to https://streamlit.io/cloud → New App → connect your repo.
-3. Set the entry file to `app.py`.
