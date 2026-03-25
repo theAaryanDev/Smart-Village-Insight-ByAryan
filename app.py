@@ -1,17 +1,17 @@
-
+#Bharat mata ki jai
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Smart Village Insights", layout="centered")
 
-st.title("🌱 Smart Village Insights")
+st.title("Smart Village Insights")
 st.write("Enter your own values for Electricity Cuts, Water Usage, and Crop Yield. Graphs update live!")
 
-# ---------------------------
+
 # Section 1: Electricity Cuts
-# ---------------------------
-st.header("⚡ Electricity Cut Analysis")
+
+st.header("Electricity Cut Analysis")
 
 days_elec = st.number_input("How many days of electricity cut data?", min_value=1, max_value=30, value=7)
 
@@ -30,10 +30,10 @@ ax1.set_ylabel("Hours Without Power")
 ax1.grid(True)
 st.pyplot(fig1)
 
-# ---------------------------
+
 # Section 2: Water Usage
-# ---------------------------
-st.header("💧 Water Usage vs Wastage")
+
+st.header("Water Usage vs Wastage")
 
 days_water = st.number_input("How many days of water data?", min_value=1, max_value=15, value=5)
 
@@ -53,10 +53,10 @@ ax2.set_xlabel("Day")
 ax2.set_ylabel("Liters")
 st.pyplot(fig2)
 
-# ---------------------------
+
 # Section 3: Crop Yield
-# ---------------------------
-st.header("🌾 Rainfall vs Crop Yield")
+
+st.header("Rainfall vs Crop Yield")
 
 entries_crop = st.number_input("How many crop data points?", min_value=1, max_value=10, value=5)
 
@@ -77,4 +77,4 @@ ax3.set_ylabel("Yield (quintals/acre)")
 ax3.grid(True)
 st.pyplot(fig3)
 
-st.success("✅ Dashboard ready! All values are entered directly by the user.")
+st.success("Dashboard ready! All values are entered directly by the user.")
